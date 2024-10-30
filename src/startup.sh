@@ -13,4 +13,4 @@ sed -i -e "s/?replace_label_short_domain_regex?/$shortr/g" $SCRIPTPATH/nginx.con
 sed -i -e "s/?replace_label_long_domain?/$long/g" $SCRIPTPATH/nginx.conf
 sed -i -e "s/?replace_label_long_domain_regex?/$longr/g" $SCRIPTPATH/nginx.conf
 
-nginx -g daemon off
+nginx -g 'daemon off;'
