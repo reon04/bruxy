@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 SCRIPTPATH=/etc/nginx
 short=${SHORT_DOMAIN:-rub.de}
 long=${LONG_DOMAIN:-ruhr-uni-bochum.de}
@@ -13,4 +13,4 @@ sed -i -e "s/?replace_label_short_domain_regex?/$shortr/g" $SCRIPTPATH/nginx.con
 sed -i -e "s/?replace_label_long_domain?/$long/g" $SCRIPTPATH/nginx.conf
 sed -i -e "s/?replace_label_long_domain_regex?/$longr/g" $SCRIPTPATH/nginx.conf
 
-nginx -s reload
+nginx -g daemon off
