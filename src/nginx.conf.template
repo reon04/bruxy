@@ -34,7 +34,7 @@ http {
       proxy_set_header Accept-Encoding "";
       proxy_ssl_server_name on;
       proxy_pass https://${subdomain}rub.de;
-      proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)rub\.de(.*) http://$2?replace_label_short_domain?$3; # remove https overwrite
+      proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)rub\.de(.*) http$1://$2?replace_label_short_domain?$3;
       proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)ruhr-uni-bochum\.de(.*) http$1://$2?replace_label_long_domain?$3;
       subs_filter_types text/plain text/css text/javascript application/json application/ld+json;
       subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)rub\.de" "http$1:$2$3?replace_label_short_domain?" r;
@@ -70,7 +70,7 @@ http {
       proxy_set_header Accept-Encoding "";
       proxy_ssl_server_name on;
       proxy_pass https://${subdomain}ruhr-uni-bochum.de;
-      proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)rub\.de(.*) http://$2?replace_label_short_domain?$3; # remove https overwrite
+      proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)rub\.de(.*) http$1://$2?replace_label_short_domain?$3;
       proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)ruhr-uni-bochum\.de(.*) http$1://$2?replace_label_long_domain?$3;
       subs_filter_types text/plain text/css text/javascript application/json application/ld+json;
       subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)rub\.de" "http$1:$2$3?replace_label_short_domain?" r;
