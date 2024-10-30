@@ -1,0 +1,101 @@
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+error_log /var/log/nginx/error.log;
+include /etc/nginx/modules-enabled/*.conf;
+
+
+events {
+  worker_connections  1024;
+}
+
+
+http {
+  include       mime.types;
+  default_type  application/octet-stream;
+
+  sendfile        on;
+
+  keepalive_timeout  60;
+
+  resolver 1.1.1.1;
+
+  server {
+    listen       80;
+    server_name  ~^(?<subdomain>(?:[a-zA-Z0-9-~_]+\.)*)?replace_label_short_domain_regex?$;
+
+    location / {
+      proxy_hide_header Access-Control-Allow-Origin;
+      add_header Access-Control-Allow-Origin "*" always;
+      proxy_set_header Host ${subdomain}rub.de;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header User-Agent $http_user_agent;
+      proxy_set_header Referer "https://ruhr-uni-bochum.de/";
+      proxy_set_header Accept-Encoding "";
+      proxy_ssl_server_name on;
+      proxy_pass https://${subdomain}rub.de;
+      proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)rub\.de(.*) http://$2?replace_label_short_domain?$3; # remove https overwrite
+      proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)ruhr-uni-bochum\.de(.*) http$1://$2?replace_label_long_domain?$3;
+      subs_filter_types text/plain text/css text/javascript application/json application/ld+json;
+      subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)rub\.de" "http$1:$2$3?replace_label_short_domain?" r;
+      subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)ruhr-uni-bochum\.de" "http$1:$2$3?replace_label_long_domain?" r;
+      subs_filter "(?<![a-zA-Z0-9\-_])RUB" "BRU" r;
+      subs_filter "Ruhr-Universität Bochum" "Bochum Ruhr Universität";
+      subs_filter "RUHR-UNIVERSITÄT BOCHUM" "BOCHUM RUHR UNIVERSITÄT";
+      subs_filter "Ruhr-Universität" "BRU-Universität";
+      subs_filter "Ruhr University" "BRU University";
+    }
+
+    location ~^/themes/custom/(?:rub|rub_nepo_theme)/logo.svg {
+      alias /usr/share/nginx/html/logo.svg;
+      add_header Access-Control-Allow-Origin "*" always;
+    }
+
+    location ~^(?:/themes/custom/(?:rub|rub_nepo_theme))?/favicon.ico {
+      alias /usr/share/nginx/html/favicon.ico;
+    }
+  }
+
+  server {
+    listen       80;
+    server_name  ~^(?<subdomain>(?:[a-zA-Z0-9-~_]+\.)*)?replace_label_long_domain_regex?$;
+
+    location / {
+      proxy_hide_header Access-Control-Allow-Origin;
+      add_header Access-Control-Allow-Origin "*" always;
+      proxy_set_header Host ${subdomain}ruhr-uni-bochum.de;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header User-Agent $http_user_agent;
+      proxy_set_header Referer "https://ruhr-uni-bochum.de/";
+      proxy_set_header Accept-Encoding "";
+      proxy_ssl_server_name on;
+      proxy_pass https://${subdomain}ruhr-uni-bochum.de;
+      proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)rub\.de(.*) http://$2?replace_label_short_domain?$3; # remove https overwrite
+      proxy_redirect ~http(s)?:\/\/((?:[a-zA-Z0-9-~_]+\.)*)ruhr-uni-bochum\.de(.*) http$1://$2?replace_label_long_domain?$3;
+      subs_filter_types text/plain text/css text/javascript application/json application/ld+json;
+      subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)rub\.de" "http$1:$2$3?replace_label_short_domain?" r;
+      subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)ruhr-uni-bochum\.de" "http$1:$2$3?replace_label_long_domain?" r;
+      subs_filter "(?<![a-zA-Z0-9\-_])RUB" "BRU" r;
+      subs_filter "Ruhr-Universität Bochum" "Bochum Ruhr Universität";
+      subs_filter "RUHR-UNIVERSITÄT BOCHUM" "BOCHUM RUHR UNIVERSITÄT";
+      subs_filter "Ruhr-Universität" "BRU-Universität";
+      subs_filter "Ruhr University" "BRU University";
+    }
+
+    location ~^/themes/custom/(?:rub|rub_nepo_theme)/logo.svg {
+      alias /usr/share/nginx/html/logo.svg;
+      add_header Access-Control-Allow-Origin "*" always;
+    }
+
+    location ~^(?:/themes/custom/(?:rub|rub_nepo_theme))?/favicon.ico {
+      alias /usr/share/nginx/html/favicon.ico;
+    }
+  }
+
+  server {
+    listen      80 default_server;
+    server_name _;
+    
+    return      444; #Connection closed without response
+  }
+}
