@@ -1,0 +1,2 @@
+src/nginx.conf.template linguist-detectable
+src/nginx.conf.template linguist-language=Nginx
