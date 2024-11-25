@@ -1,8 +1,8 @@
-name: Publish Docker image as latest
+name: Publish Docker image
 
 on:
   release:
-    types: [released]
+    types: [prereleased]
 
 jobs:
   docker:
@@ -25,6 +25,7 @@ jobs:
         uses: docker/metadata-action@v5.5.1
         with:
           images: reon04/bruxy
+          flavor: latest=false
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
