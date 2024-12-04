@@ -1,11 +1,15 @@
-FROM debian:bookworm-slim
+FROM ubuntu:24.04
 
 RUN apt-get update && apt-get install -y \
-	ca-certificates \
-	lua-cjson \
-	lua-iconv \
-	nginx-extras \
-	--no-install-recommends \
+    software-properties-common \
+    --no-install-recommends \
+	&& add-apt-repository ppa:ondrej/nginx \
+  && apt-get update && apt-get install -y \
+	  nginx \
+	  libnginx-mod-http-subs-filter \
+	  --no-install-recommends \
+	&& apt-get autoremove --purge -y \
+	  software-properties-common \
 	&& rm -rf /var/lib/apt/lists/*
 
 COPY src/logo.svg /usr/share/nginx/html
