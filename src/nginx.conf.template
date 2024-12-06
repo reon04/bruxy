@@ -39,21 +39,10 @@ http {
       subs_filter_types text/plain text/css text/javascript application/json application/ld+json;
       subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)rub\.de" "http$1:$2$3?replace_label_short_domain?" r;
       subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)ruhr-uni-bochum\.de" "http$1:$2$3?replace_label_long_domain?" r;
-      subs_filter "(?<![a-zA-Z0-9\-_])RUB" "BRU" r;
-      subs_filter "Ruhr-Universität Bochum" "Bochum Ruhr Universität";
-      subs_filter "RUHR-UNIVERSITÄT BOCHUM" "BOCHUM RUHR UNIVERSITÄT";
-      subs_filter "Ruhr-Universität" "BRU-Universität";
-      subs_filter "Ruhr University" "BRU University";
+      ?replace_label_subs?
     }
 
-    location ~^/themes/custom/(?:rub|rub_nepo_theme)/logo.svg {
-      alias /usr/share/nginx/html/logo.svg;
-      add_header Access-Control-Allow-Origin "*" always;
-    }
-
-    location ~^(?:/themes/custom/(?:rub|rub_nepo_theme))?/favicon.ico {
-      alias /usr/share/nginx/html/favicon.ico;
-    }
+    ?replace_label_res_subs?
   }
 
   server {
@@ -75,21 +64,10 @@ http {
       subs_filter_types text/plain text/css text/javascript application/json application/ld+json;
       subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)rub\.de" "http$1:$2$3?replace_label_short_domain?" r;
       subs_filter "http(s)?:(\/\/|\\\/\\\/)((?:[a-zA-Z0-9-~_]+\.)*)ruhr-uni-bochum\.de" "http$1:$2$3?replace_label_long_domain?" r;
-      subs_filter "(?<![a-zA-Z0-9\-_])RUB" "BRU" r;
-      subs_filter "Ruhr-Universität Bochum" "Bochum Ruhr Universität";
-      subs_filter "RUHR-UNIVERSITÄT BOCHUM" "BOCHUM RUHR UNIVERSITÄT";
-      subs_filter "Ruhr-Universität" "BRU-Universität";
-      subs_filter "Ruhr University" "BRU University";
+      ?replace_label_subs?
     }
 
-    location ~^/themes/custom/(?:rub|rub_nepo_theme)/logo.svg {
-      alias /usr/share/nginx/html/logo.svg;
-      add_header Access-Control-Allow-Origin "*" always;
-    }
-
-    location ~^(?:/themes/custom/(?:rub|rub_nepo_theme))?/favicon.ico {
-      alias /usr/share/nginx/html/favicon.ico;
-    }
+    ?replace_label_res_subs?
   }
 
   server {

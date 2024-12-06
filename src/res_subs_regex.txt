@@ -1,0 +1,2 @@
+^/themes/custom/(?:rub|rub_nepo_theme)/logo.svg;logo.svg
+^(?:/themes/custom/(?:rub|rub_nepo_theme))?/favicon.ico;favicon.ico
