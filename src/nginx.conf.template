@@ -1,7 +1,7 @@
 user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
-error_log /var/log/nginx/error.log debug_keylog;
+error_log /var/log/nginx/error.log debug;
 include /etc/nginx/modules-enabled/*.conf;
 
 
