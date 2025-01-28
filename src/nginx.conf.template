@@ -83,3 +83,7 @@ http {
     return      444; #Connection closed without response
   }
 }
+
+# TODO standalone branch
+# TODO readme
+# TODO subdomain collection

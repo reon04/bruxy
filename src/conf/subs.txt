@@ -15,9 +15,9 @@ alex.may;alex.lastname
 Maike Buchin;Baike Muchin
 MAIKE BUCHIN;BAIKE Muchin
 maike.buchin;baike.muchin
-Cristof Paar;Crissy P
-CRISTOF PAAR;CRISSY P
-cristof.paar;crissy.p
+Christof Paar;Crissy P
+CHRISTOF PAAR;CRISSY P
+christof.paar;crissy.p
 Tobias Glasmachers;Glasi
 TOBIAS GLASMACHERS;GLASI
 tobias.glasmachers;glasi
