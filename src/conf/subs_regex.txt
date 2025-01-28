@@ -7,3 +7,7 @@ Christof[\t]*<\/div>;Crissy</div>
 Paar[\t]*<\/div>;P</div>
 Tobias[\t]*<\/div>;Glasi</div>
 Glasmachers[\t]*<\/div>;</div>
+Fleischhacker[\t]*<\/div>;Sojahacker</div>
+Hönig[\t]*<\/div>;Honig</div>
+Thorsten[\t]*<\/div>;Thomas</div>
+Berger[\t]*<\/div>;Taler</div>

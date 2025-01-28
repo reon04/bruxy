@@ -1,2 +1,4 @@
 /wp-content/uploads/elementor/thumbs/Portrait_Buchin-scaled-qqydzfvazq7t7wkz1nkhh9unwljvnmcyic3fam5zby.webp;buchin.webp
 /wp-content/uploads/2023/08/Portrait_Buchin-682x1024.webp;buchin.webp
+/wp-content/uploads/elementor/thumbs/Portrait_Hoenig-scaled-qqyedxjqcs1y7hj7ff2ff47hlg4lbmvzi25wn6ohem.webp;hönig.webp
+/wp-content/uploads/2023/08/Portrait_Hoenig-683x1024.webp;hönig.webp
