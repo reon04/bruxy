@@ -2,3 +2,22 @@ Ruhr-Universität Bochum;Bochum Ruhr Universität
 RUHR-UNIVERSITÄT BOCHUM;BOCHUM RUHR UNIVERSITÄT
 Ruhr-Universität;BRU-Universität
 Ruhr University;BRU University
+rub.de;bru.fyi
+ruhr-uni-bochum.de;bochum-ruhr-uni.de
+AStA;AtSA
+Lars Adolph;Der Generalsekretär
+Gregor Leander;Daddy Leander
+GREGOR LEANDER;DADDY LEANDER
+gregor.leander;daddy.leander
+Alexander May;Alexander Lastname
+ALEXANDER MAY;ALEXANDER LASTNAME
+alex.may;alex.lastname
+Maike Buchin;Baike Muchin
+MAIKE BUCHIN;BAIKE Muchin
+maike.buchin;baike.muchin
+Cristof Paar;Crissy P
+CRISTOF PAAR;CRISSY P
+cristof.paar;crissy.p
+Tobias Glasmachers;Glasi
+TOBIAS GLASMACHERS;GLASI
+tobias.glasmachers;glasi
