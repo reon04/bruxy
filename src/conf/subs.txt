@@ -2,8 +2,12 @@ Ruhr-Universität Bochum;Bochum Ruhr Universität
 RUHR-UNIVERSITÄT BOCHUM;BOCHUM RUHR UNIVERSITÄT
 Ruhr-Universität;BRU-Universität
 Ruhr University;BRU University
-rub.de;bru.fyi
-ruhr-uni-bochum.de;bochum-ruhr-uni.de
+@rub.de;@bru.fyi
+@ruhr-uni-bochum.de;@bochum-ruhr-uni.de
+(at)rub.de;(at)bru.fyi
+(at)ruhr-uni-bochum.de;(at)bochum-ruhr-uni.de
+[at]rub.de;[at]bru.fyi
+[at]ruhr-uni-bochum.de;[at]bochum-ruhr-uni.de
 AStA;AtSA
 Lars Adolph;Der Generalsekretär
 Gregor Leander;Daddy Leander
