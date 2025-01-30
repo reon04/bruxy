@@ -4,12 +4,16 @@ Ruhr-Universität;BRU-Universität
 Ruhr University;BRU University
 @rub.de;@bru.fyi
 @ruhr-uni-bochum.de;@bochum-ruhr-uni.de
+@edu.rub.de;@edu.bru.fyi
+@edu.ruhr-uni-bochum.de;@edu.bochum-ruhr-uni.de
 (at)rub.de;(at)bru.fyi
 (at)ruhr-uni-bochum.de;(at)bochum-ruhr-uni.de
 [at]rub.de;[at]bru.fyi
 [at]ruhr-uni-bochum.de;[at]bochum-ruhr-uni.de
 AStA;AtSA
 Lars Adolph;Der Generalsekretär
+Fakultät für Informatik;Fakultät für Glasi
+FAKULTÄT FÜR INFORMATIK;FAKULTÄT FÜR GLASI
 Gregor Leander;Daddy Leander
 GREGOR LEANDER;DADDY LEANDER
 gregor.leander;daddy.leander
@@ -40,3 +44,23 @@ thomas.herrmann;thomas.fraufrau
 Biljana Cubaleska;Ciljana Bubaleska
 BILJANA CUBALESKA;CILJANA BUBALESKA
 biljana.cubaleska;ciljana.bubaleska
+Markus König;Markus Präsident
+MARKUS KÖNIG;MARKUS PRÄSIDENT
+koenig@;praesident@
+Martina Angela Sasse;Martian "Die Queen" Sasse
+MARTINA ANGELA SASSE;MARTINA "DIE QUEEN" SASSE
+Asja Fischer;Asja Anglerin
+ASJA FISCHER;ASJA ANGLERIN
+asja.fischer;asja.anglerin
+Gregor Schöner;Daddy Döner
+GREGOR SCHÖNER;DADDY DÖNER
+gregor.schoener;daddy.doener
+Sen Cheng;Cheng Cheng
+SEN CHENG;CHENG CHENG
+sen.cheng;cheng.cheng
+Jörg Schwenk;Schwenki Schwenk
+JÖRG SCHWENK;SCHWENKI SCHWENK
+joerg.schwenk;schwenki.schwenk
+Anja Nuss;Anja Schalenfrucht
+ANJA NUSS;ANJA SCHALENFRUCHT
+anja.nuss;anja.schalenfrucht

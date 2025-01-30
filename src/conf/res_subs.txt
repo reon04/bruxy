@@ -1,9 +1,13 @@
 /wp-content/uploads/2021/08/fcs_logo_link-weiss-gruen-300x174.png;fakultaet_fuer_glasi.png
 /wp-content/uploads/2021/08/fcs_logo_link-weiss-gruen-768x446.png;fakultaet_fuer_glasi.png
+/wp-content/uploads/2021/08/fcs_logo_link-weiss-gruen-1024x595.png;fakultaet_fuer_glasi.png
 /wp-content/uploads/2023/07/label-RUB_invert.svg;logo_invert.svg
 /wp-content/uploads/elementor/thumbs/Portrait_Buchin-scaled-qqydzfvazq7t7wkz1nkhh9unwljvnmcyic3fam5zby.webp;buchin.webp
 /wp-content/uploads/2023/08/Portrait_Buchin-682x1024.webp;buchin.webp
 /wp-content/uploads/elementor/thumbs/Portrait_Hoenig-scaled-qqyedxjqcs1y7hj7ff2ff47hlg4lbmvzi25wn6ohem.webp;hönig.webp
 /wp-content/uploads/2023/08/Portrait_Hoenig-683x1024.webp;hönig.webp
 /wp-content/uploads/elementor/thumbs/Portrait_Yarom-scaled-qqyf4py54sq53emczzxnhcuf2s36p38l6ni312yk2m.webp;noyuval.png
-/wp-content/uploads/2023/08/Portrait_Yarom-683x1024.webp;noyuval.png
+/wp-content/uploads/2023/08/Portrait_Yarom-683x1024.webp;noyuval.jpg
+/wp-content/uploads/elementor/thumbs/2024_04_18_km_moonsamy_veelasha-2-e1729855356622-qw2rdq11qznw5rrxkzzpnif3hnqouljc8mk5ao4qou.jpg;moonsamy.jpg
+/wp-content/uploads/elementor/thumbs/2024_03_04_km_kohls_katharina-3_1-e1711624796965-qlvh556oler7e16an4pf4ll9e609w48ewi4ueyxnoe.jpg;kohls.jpg
+/wp-content/uploads/2024/03/2024_03_04_km_kohls_katharina-3_1-e1711624796965.jpg;kohls.jpg

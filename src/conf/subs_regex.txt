@@ -13,3 +13,10 @@ Thorsten[\t]*<\/div>;Thomas</div>
 Berger[\t]*<\/div>;Taler</div>
 Biljana[\t]*<\/div>;Ciljana</div>
 Cubaleska[\t]*<\/div>;Bubaleska</div>
+König[\t]*<\/div>;Präsident</div>
+Martina Angela[\t]*<\/div>;Martina "Die Queen"</div>
+Fischer[\t]*<\/div>;Anglerin</div>
+Schöner[\t]*<\/div>;Döner</div>
+Sen[\t]*<\/div>;Cheng</div>
+Jörg[\t]*<\/div>;Schwenki</div>
+Nuss[\t]*<\/div>;Schalenfrucht</div>
