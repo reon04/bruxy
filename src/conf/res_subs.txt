@@ -1,4 +1,5 @@
 /wp-content/uploads/2021/08/fcs_logo_link-weiss-gruen-300x174.png;fakultaet_fuer_glasi.png
+/wp-content/uploads/2021/08/fcs_logo_link-weiss-gruen-768x446.png;fakultaet_fuer_glasi.png
 /wp-content/uploads/2023/07/label-RUB_invert.svg;logo_invert.svg
 /wp-content/uploads/elementor/thumbs/Portrait_Buchin-scaled-qqydzfvazq7t7wkz1nkhh9unwljvnmcyic3fam5zby.webp;buchin.webp
 /wp-content/uploads/2023/08/Portrait_Buchin-682x1024.webp;buchin.webp
