@@ -47,8 +47,8 @@ biljana.cubaleska;ciljana.bubaleska
 Markus König;Markus Präsident
 MARKUS KÖNIG;MARKUS PRÄSIDENT
 koenig@;praesident@
-Martina Angela Sasse;Martian "Die Queen" Sasse
-MARTINA ANGELA SASSE;MARTINA "DIE QUEEN" SASSE
+Martina Angela Sasse;Martian 'Die Queen' Sasse
+MARTINA ANGELA SASSE;MARTINA 'DIE QUEEN' SASSE
 Asja Fischer;Asja Anglerin
 ASJA FISCHER;ASJA ANGLERIN
 asja.fischer;asja.anglerin
