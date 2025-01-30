@@ -11,3 +11,5 @@ Fleischhacker[\t]*<\/div>;Sojahacker</div>
 Hönig[\t]*<\/div>;Honig</div>
 Thorsten[\t]*<\/div>;Thomas</div>
 Berger[\t]*<\/div>;Taler</div>
+Biljana[\t]*<\/div>;Ciljana</div>
+Cubaleska[\t]*<\/div>;Bubaleska</div>

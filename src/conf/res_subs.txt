@@ -1,4 +1,8 @@
+/wp-content/uploads/2021/08/fcs_logo_link-weiss-gruen-300x174.png;fakultaet_fuer_glasi.png
+/wp-content/uploads/2023/07/label-RUB_invert.svg;logo_invert.svg
 /wp-content/uploads/elementor/thumbs/Portrait_Buchin-scaled-qqydzfvazq7t7wkz1nkhh9unwljvnmcyic3fam5zby.webp;buchin.webp
 /wp-content/uploads/2023/08/Portrait_Buchin-682x1024.webp;buchin.webp
 /wp-content/uploads/elementor/thumbs/Portrait_Hoenig-scaled-qqyedxjqcs1y7hj7ff2ff47hlg4lbmvzi25wn6ohem.webp;hönig.webp
 /wp-content/uploads/2023/08/Portrait_Hoenig-683x1024.webp;hönig.webp
+/wp-content/uploads/elementor/thumbs/Portrait_Yarom-scaled-qqyf4py54sq53emczzxnhcuf2s36p38l6ni312yk2m.webp;noyuval.png
+/wp-content/uploads/2023/08/Portrait_Yarom-683x1024.webp;noyuval.jpg
