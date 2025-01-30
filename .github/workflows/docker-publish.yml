@@ -24,7 +24,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: reon04/bruxy
+          images: ${{ github.repository }}
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
@@ -33,5 +33,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-from: type=registry,ref=${{ github.repository }}:buildcache
+          cache-to: type=registry,ref=${{ github.repository }}:buildcache,mode=max

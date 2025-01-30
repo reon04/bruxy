@@ -21,6 +21,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: false
-          tags: reon04/bruxy
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          tags: ${{ github.repository }}
+          cache-from: type=registry,ref=${{ github.repository }}:buildcache
+          cache-to: type=registry,ref=${{ github.repository }}:buildcache,mode=max
