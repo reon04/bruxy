@@ -6,4 +6,4 @@
 /wp-content/uploads/elementor/thumbs/Portrait_Hoenig-scaled-qqyedxjqcs1y7hj7ff2ff47hlg4lbmvzi25wn6ohem.webp;hönig.webp
 /wp-content/uploads/2023/08/Portrait_Hoenig-683x1024.webp;hönig.webp
 /wp-content/uploads/elementor/thumbs/Portrait_Yarom-scaled-qqyf4py54sq53emczzxnhcuf2s36p38l6ni312yk2m.webp;noyuval.png
-/wp-content/uploads/2023/08/Portrait_Yarom-683x1024.webp;noyuval.jpg
+/wp-content/uploads/2023/08/Portrait_Yarom-683x1024.webp;noyuval.png
