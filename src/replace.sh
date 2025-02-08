@@ -13,7 +13,7 @@ sed -i -e "s/?replace_label_short_domain_regex?/$shortr/g" $SCRIPTPATH/nginx.con
 sed -i -e "s/?replace_label_long_domain?/$long/g" $SCRIPTPATH/nginx.conf
 sed -i -e "s/?replace_label_long_domain_regex?/$longr/g" $SCRIPTPATH/nginx.conf
 
-# insert string substitutions 
+# insert string substitutions
 while IFS="" read -r p || [ -n "$p" ]
 do
   sub="subs_filter \"$(echo "$p" | tr -d '\n' | sed -e "s/;/\" \"/g")\";"

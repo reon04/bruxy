@@ -19,4 +19,12 @@ Fischer[\t]*<\/div>;Anglerin</div>
 Schöner[\t]*<\/div>;Döner</div>
 Sen[\t]*<\/div>;Cheng</div>
 Jörg[\t]*<\/div>;Schwenki</div>
+Bondorf[\t]*<\/div>;Bonstadt</div>
+Ghassan[\t]*<\/div>;Hassan</div>
+Karame[\t]*<\/div>;Keramik</div>
+Marky[\t]*<\/div>;Euro</div>
+Toffalini[\t]*<\/div>;Pantoffel</div>
+Walter[\t]*<\/div>;White</div>
+Wiskott[\t]*<\/div>;Witzkopp</div>
 Nuss[\t]*<\/div>;Schalenfrucht</div>
+Kallweit[\t]*<\/div>;Kallnah</div>
