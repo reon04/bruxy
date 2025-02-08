@@ -18,7 +18,7 @@ http {
 
   keepalive_timeout  60;
 
-  resolver 1.1.1.1;
+  resolver ?replace_label_dns_resolver?;
 
   server {
     listen       80;

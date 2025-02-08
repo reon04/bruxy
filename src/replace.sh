@@ -1,6 +1,10 @@
 #!/bin/bash
 SCRIPTPATH=/etc/nginx
 
+# insert optional custom dns resolver ip
+dns_resolver=${DNS_RESOLVER:-1.1.1.1}
+sed -i -e "s/?replace_label_dns_resolver?/$dns_resolver/g" $SCRIPTPATH/nginx.conf
+
 # insert domain name to listen on
 short=${SHORT_DOMAIN:-rub.de}
 long=${LONG_DOMAIN:-ruhr-uni-bochum.de}
