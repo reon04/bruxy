@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
 	  software-properties-common \
 	&& rm -rf /var/lib/apt/lists/*
 
+ADD src/k8s/* /etc/k8s/
 COPY src/res/* /usr/share/nginx/html
 
 WORKDIR /etc/nginx
