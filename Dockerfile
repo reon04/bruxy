@@ -18,7 +18,7 @@ COPY src/res/* /usr/share/nginx/html
 WORKDIR /etc/nginx
 COPY src/nginx.conf.template src/conf/subs.txt src/conf/subs_regex.txt src/conf/res_subs.txt src/conf/res_subs_regex.txt src/replace.sh src/startup.sh .
 RUN chmod 644 nginx.conf.template subs.txt subs_regex.txt res_subs.txt res_subs_regex.txt \
-  && chmod 744 replace.sh startup.sh
+  && chmod 744 replace.sh startup.sh /etc/k8s/gen_ingress_match_str.sh
 
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
